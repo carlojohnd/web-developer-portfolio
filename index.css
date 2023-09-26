@@ -1,0 +1,78 @@
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+#main, #projects, #tools, #contact {
+    min-height: 100vh;
+}
+
+
+#img img {
+    width: 50%;
+}
+
+#img {
+    animation-name: img-slide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#intro {
+    animation-name: intro-slide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.links,{
+    transition: .5s ease-in-out;
+    font-style: 'Poppins', sans-serif;
+}
+
+.links:hover {
+    position: absolute;
+    cursor: pointer;
+    animation-name: highlight;
+    animation-duration: .03s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+
+
+
+h1, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cards {
+    min-height: 600px;
+    border-radius: 50px;
+}
+
+#projects img {
+    max-height: 200px;
+}
+
+#contact {
+    border-radius: 50px;
+}
+
+@keyframes img-slide {
+    from {transform: translateX(-1000px); opacity: 0;}
+    to {transform:  translateX(0); opacity: 1;}
+}
+
+@keyframes intro-slide {
+    from {transform: translateX(1000px); opacity: 0;}
+    to {transform:  translateX(0); opacity: 1;}
+}
+
+@keyframes highlight {
+    from {transform: translateY(0); border: solid 1px black;  padding: 0;}
+    to {transform: translateY(-5px); border: solid 1px black;  padding: 2px;}
+}   
